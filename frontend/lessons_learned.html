@@ -1114,7 +1114,7 @@
       // --- Handlers ---
       async function notifyTimelineChange(lesson) {
         try {
-          await fetch('http://localhost:3001/api/notify-timeline-change', {
+          await fetch(fetch('https://lessons-learned-notification.onrender.com/api/notify-timeline-change', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(lesson),
